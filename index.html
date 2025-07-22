@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLog Pro - Gym Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <nav class="landing-nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>GymLog Pro</span>
+                </div>
+                <button class="btn btn-primary" id="getStartedBtn">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Manage Your Gym
+                    <span class="gradient-text">Like a Pro</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The modern gym management system that helps you track member check-ins, 
+                    monitor attendance, and manage payments with a beautiful and intuitive interface.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" id="startTrackingBtn">
+                        <i class="fas fa-play"></i> Start Tracking
+                    </button>
+                    <button class="btn btn-outline btn-large" id="learnMoreBtn">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>GymLog Pro has completely transformed how I manage my fitness center. Check-ins are seamless and my members love it!</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JD</div>
+                                <div class="author-info">
+                                    <div class="author-name">John Davis</div>
+                                    <div class="author-title">Gym Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>Since implementing GymLog Pro, our membership retention has increased by 30%. The analytics are incredibly valuable!</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info">
+                                    <div class="author-name">Sarah Miller</div>
+                                    <div class="author-title">Fitness Director</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The payment tracking feature alone has saved me hours of administrative work each week. Highly recommended!</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">MT</div>
+                                <div class="author-info">
+                                    <div class="author-name">Mike Thompson</div>
+                                    <div class="author-title">Studio Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <div class="carousel-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                        <div class="carousel-arrows">
+                            <button class="carousel-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-arrow next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features-content">
+                <h2 class="section-title">Everything You Need to Manage Your Gym</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Attendance Tracking</h3>
+                        <p>Monitor member check-ins and attendance patterns with detailed analytics and visual charts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Optimized</h3>
+                        <p>Perfect for use on any device. Manage your gym seamlessly whether you're on your phone or computer.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Local Storage</h3>
+                        <p>Your data stays private and secure on your device. No accounts needed, no data shared with third parties.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-stopwatch"></i>
+                        </div>
+                        <h3>Quick Check-In</h3>
+                        <p>Spend less time on administration. Our intuitive interface makes member check-ins effortless.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Payment Tracking</h3>
+                        <p>Keep track of member payments and easily manage different payment types and rates.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Beautiful Design</h3>
+                        <p>A modern, clean interface that makes managing your gym enjoyable and efficient.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Ready to Streamline Your Gym Management?</h2>
+                <p>Join hundreds of gym owners who trust GymLog Pro to manage their facilities efficiently.</p>
+                <button class="btn btn-primary btn-large" id="startNowBtn">
+                    <i class="fas fa-rocket"></i> Get Started Now
+                </button>
+            </div>
+        </section>
+
+        <footer class="landing-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>GymLog Pro</span>
+                </div>
+                <p>&copy; 2024 GymLog Pro. Built with passion for gym owners and managers.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Main App -->
+    <div class="app-container" id="appContainer" style="display: none;">
+        <div class="container">
+            <header class="header">
+                <div class="header-content">
+                    <h1><i class="fas fa-dumbbell"></i> GymLog Pro</h1>
+                    <div class="header-actions">
+                        <button class="btn btn-secondary" id="backToLandingBtn">
+                            <i class="fas fa-home"></i> Home
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+                <!-- Check In/Out Dialog -->
+                <dialog id="checkInDialog" class="check-in-dialog">
+                    <div class="form-header">
+                        <h2>Member Check In/Out</h2>
+                        <button class="btn btn-secondary" id="cancelCheckInOutBtn">
+                            <i class="fas fa-times"></i> Cancel
+                        </button>
+                    </div>
+
+                    <form id="checkInOutForm" method="dialog">
+                        <div class="form-group">
+                            <label for="memberName">Member Name</label>
+                            <input type="text" id="memberName" placeholder="Enter member name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="checkInTime">Check-In Time</label>
+                            <input type="time" id="checkInTime" required>
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label>Payment Type</label>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentType" value="40" checked>
+                                    <span>Regular ($40)</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentType" value="30">
+                                    <span>Member ($30)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Save Entry
+                            </button>
+                        </div>
+                    </form>
+                </dialog>
+
+                <!-- Dashboard Section -->
+                <section class="dashboard" id="dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">
+                            <h2>Check-Ins: <span id="currentDateDisplay">Today</span></h2>
+                            <div id="archiveHeader" style="display: none;" class="archive-header">
+                                <button id="backToTodayBtn" class="btn btn-sm btn-outline" style="display: none;">
+                                    <i class="fas fa-arrow-left"></i> Back to Today
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dashboard-actions">
+                            <button id="archiveBtn" class="btn btn-secondary">
+                                <i class="fas fa-archive"></i> Archive
+                            </button>
+                            <button class="btn btn-primary" id="dashboardCheckInBtn">
+                                <i class="fas fa-sign-in-alt"></i> New Check In
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="archiveSection" style="display: none;" class="archive-section">
+                        <div class="archive-controls">
+                            <label for="dateSelector">Select Date:</label>
+                            <select id="dateSelector" class="form-control">
+                                <option value="">Select a date...</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="check-in-list-container">
+                        <div class="check-in-list" id="checkInList">
+                            <div class="empty-state">
+                                <i class="fas fa-user-clock"></i>
+                                <p>No check-ins recorded today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+        </main>
+        </div>
+    </div>
+
+
+
+    <!-- Check-In Entry Template -->
+    <template id="checkInEntryTemplate">
+        <div class="check-in-entry">
+            <div class="check-in-header">
+                <div class="member-name"></div>
+                <div class="check-in-status"></div>
+            </div>
+            <div class="check-in-details">
+                <div class="check-in-time"><i class="fas fa-sign-in-alt"></i> <span></span></div>
+                <div class="check-out-time"><i class="fas fa-sign-out-alt"></i> <span></span></div>
+                <div class="payment-amount"><i class="fas fa-dollar-sign"></i> <span></span></div>
+            </div>
+            <div class="check-in-actions">
+                <button type="button" class="btn btn-sm btn-outline check-out-btn" style="display: none;">
+                    <i class="fas fa-sign-out-alt"></i> Check Out
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <script src="client.js"></script>
+</body>
+</html>
